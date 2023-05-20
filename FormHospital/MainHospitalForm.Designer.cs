@@ -36,7 +36,7 @@
             // 
             // buttonTest
             // 
-            buttonTest.Location = new Point(649, 30);
+            buttonTest.Location = new Point(932, 27);
             buttonTest.Name = "buttonTest";
             buttonTest.Size = new Size(94, 29);
             buttonTest.TabIndex = 0;
@@ -48,13 +48,13 @@
             // 
             listView1.Location = new Point(25, 30);
             listView1.Name = "listView1";
-            listView1.Size = new Size(568, 383);
+            listView1.Size = new Size(855, 383);
             listView1.TabIndex = 1;
             listView1.UseCompatibleStateImageBehavior = false;
             // 
             // buttonList
             // 
-            buttonList.Location = new Point(649, 128);
+            buttonList.Location = new Point(932, 125);
             buttonList.Name = "buttonList";
             buttonList.Size = new Size(94, 29);
             buttonList.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // buttonAddDoctor
             // 
-            buttonAddDoctor.Location = new Point(649, 194);
+            buttonAddDoctor.Location = new Point(932, 191);
             buttonAddDoctor.Name = "buttonAddDoctor";
             buttonAddDoctor.Size = new Size(94, 71);
             buttonAddDoctor.TabIndex = 3;
@@ -72,16 +72,18 @@
             buttonAddDoctor.UseVisualStyleBackColor = true;
             buttonAddDoctor.Click += buttonDoktorEkle_Click;
             // 
-            // Form1
+            // MainHospitalForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1149, 450);
             Controls.Add(buttonAddDoctor);
             Controls.Add(buttonList);
             Controls.Add(listView1);
             Controls.Add(buttonTest);
-            Name = "Form1";
+            MaximumSize = new Size(1167, 497);
+            MinimumSize = new Size(1167, 497);
+            Name = "MainHospitalForm";
             Text = "Hospital";
             Load += Form1_Load;
             ResumeLayout(false);

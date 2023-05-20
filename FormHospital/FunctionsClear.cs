@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FormHospital
 {
-    public class Fonksiyonlar
+    public class FunctionsClear
     {
-        public static void Temizle(Form form)
+        public static void Clear(Form form)
         {
             foreach (Control item in form.Controls)
             {
