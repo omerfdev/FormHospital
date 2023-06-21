@@ -21,7 +21,7 @@ namespace FormHospital.Concreate
 
         private void DoktorEkle_Load(object sender, EventArgs e)
         {
-            comboBoxCinsiyet.Items.AddRange(System.Enum.GetNames(typeof(Gender)));
+            comboBoxGender.Items.AddRange(System.Enum.GetNames(typeof(Gender)));
         }
 
         private void buttonDoktorEkle_Click(object sender, EventArgs e)
@@ -30,38 +30,38 @@ namespace FormHospital.Concreate
             {
                 OrthopedicsDoctor ortopediDoktor = new OrthopedicsDoctor()
                 {
-                    Name = textBoxAd.Text,
-                    Surname = textBoxSoyad.Text,
-                    MoneyPay = double.Parse(textBoxMaas.Text),
-                    TurkishID = textBoxTC.Text,
-                    MontlyVigilCount = int.Parse(textBoxAylikNobetSayisi.Text),
-                    ExtraMoneyBank = double.Parse(textBoxDonerSermaye.Text),
+                    Name = textBoxName.Text,
+                    Surname = textBoxSurname.Text,
+                    MoneyPay = double.Parse(textBoxPaycheck.Text),
+                    TurkishID = textBoxTurkishID.Text,
+                    MontlyVigilCount = int.Parse(textBoxMonthlyVigilCount.Text),
+                    ExtraMoneyBank = double.Parse(textBoxExtraMoneyBank.Text),
                     Unit = Unit.Ortopedics,
-                    DailyPatientCount = int.Parse(textBoxGunlukHastaSayisi.Text),
-                    Title = textBoxUnvan.Text,
-                    ExpertiseField = textBoxUzmanlikAlani.Text,
-                    Age = int.Parse(textBoxYas.Text),
+                    DailyPatientCount = int.Parse(textBoxDailyPatientCount.Text),
+                    Title = textBoxTitle.Text,
+                    ExpertiseField = textBoxExpertiseField.Text,
+                    Age = int.Parse(textBoxAge.Text),
                 };
-                ortopediDoktor.HumanGender = comboBoxCinsiyet.SelectedItem.ToString() == "Men" ? Gender.Men : Gender.Woman;
+                ortopediDoktor.HumanGender = comboBoxGender.SelectedItem.ToString() == "Men" ? Gender.Men : Gender.Woman;
                 MainHospitalForm.hospital.Doctors.Add(ortopediDoktor);
             }
             else if (radioButtonPsikiyatri.Checked)
             {
                 PsychiatryDoctor psikiyatriDoktor = new PsychiatryDoctor()
                 {
-                    Name = textBoxAd.Text,
-                    Surname = textBoxSoyad.Text,
-                    MoneyPay = double.Parse(textBoxMaas.Text),
-                    TurkishID = textBoxTC.Text,
-                    MontlyVigilCount = int.Parse(textBoxAylikNobetSayisi.Text),
-                    ExtraMoneyBank = double.Parse(textBoxDonerSermaye.Text),
+                    Name = textBoxName.Text,
+                    Surname = textBoxSurname.Text,
+                    MoneyPay = double.Parse(textBoxPaycheck.Text),
+                    TurkishID = textBoxTurkishID.Text,
+                    MontlyVigilCount = int.Parse(textBoxMonthlyVigilCount.Text),
+                    ExtraMoneyBank = double.Parse(textBoxExtraMoneyBank.Text),
                     Unit = Unit.Psychiatry,
-                    DailyPatientCount = int.Parse(textBoxGunlukHastaSayisi.Text),
-                    Unvan = textBoxUnvan.Text,
-                    ExpertiseField = textBoxUzmanlikAlani.Text,
-                    Age = int.Parse(textBoxYas.Text),
+                    DailyPatientCount = int.Parse(textBoxDailyPatientCount.Text),
+                    Unvan = textBoxTitle.Text,
+                    ExpertiseField = textBoxExpertiseField.Text,
+                    Age = int.Parse(textBoxAge.Text),
                 };
-                psikiyatriDoktor.HumanGender = comboBoxCinsiyet.SelectedItem.ToString() == "Men" ? Gender.Men : Gender.Woman;
+                psikiyatriDoktor.HumanGender = comboBoxGender.SelectedItem.ToString() == "Men" ? Gender.Men : Gender.Woman;
                 MainHospitalForm.hospital.Doctors.Add(psikiyatriDoktor);
 
             }

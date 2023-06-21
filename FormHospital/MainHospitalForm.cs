@@ -22,18 +22,18 @@ namespace FormHospital
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.Columns.Add("Name", 100);
-            listView1.Columns.Add("Surname", 100);
-            listView1.Columns.Add("TurkishID", 100);
-            listView1.Columns.Add("Pay", 100);
-            listView1.Columns.Add("Age", 100);
-            listView1.Columns.Add("Daily Patient", 100);
-            listView1.Columns.Add("Expertise", 100);
-            listView1.Columns.Add("MonthlyVigilCount", 100);
-            listView1.Columns.Add("ExpertiseFields", 100);
-            listView1.Columns.Add("ExtraMoneyBank", 100);
+            lstHospitalDoctor.View = View.Details;
+            lstHospitalDoctor.GridLines = true;
+            lstHospitalDoctor.Columns.Add("Name", 100);
+            lstHospitalDoctor.Columns.Add("Surname", 100);
+            lstHospitalDoctor.Columns.Add("TurkishID", 100);
+            lstHospitalDoctor.Columns.Add("Pay", 100);
+            lstHospitalDoctor.Columns.Add("Age", 100);
+            lstHospitalDoctor.Columns.Add("Daily Patient", 100);
+            lstHospitalDoctor.Columns.Add("Expertise", 100);
+            lstHospitalDoctor.Columns.Add("MonthlyVigilCount", 100);
+            lstHospitalDoctor.Columns.Add("ExpertiseFields", 100);
+            lstHospitalDoctor.Columns.Add("ExtraMoneyBank", 100);
         }
 
         public void buttonTest_Click(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace FormHospital
                 lstitem.SubItems.Add(item.MonthlyVigilCount.ToString());
                 lstitem.SubItems.Add(item.ExpertiseField);
                 lstitem.SubItems.Add(item.ExtraMoneyBank.ToString());
-                listView1.Items.Add(lstitem);
+                lstHospitalDoctor.Items.Add(lstitem);
             }
         }
 

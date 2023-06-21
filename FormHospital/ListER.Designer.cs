@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            lstList = new ListView();
             SuspendLayout();
             // 
-            // listView1
+            // lstList
             // 
-            listView1.Location = new Point(28, 22);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(678, 381);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lstList.Location = new Point(28, 22);
+            lstList.Name = "lstList";
+            lstList.Size = new Size(678, 381);
+            lstList.TabIndex = 0;
+            lstList.UseCompatibleStateImageBehavior = false;
             // 
             // Listele
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(lstList);
             Name = "Listele";
             Text = "Listele";
             Load += Listele_Load;
@@ -53,6 +53,6 @@
 
         #endregion
 
-        private ListView listView1;
+        private ListView lstList;
     }
 }

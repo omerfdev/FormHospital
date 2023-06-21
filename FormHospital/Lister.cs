@@ -21,18 +21,18 @@ namespace FormHospital
         private void Listele_Load(object sender, EventArgs e)
         {
 
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.Columns.Add("Name", 100);
-            listView1.Columns.Add("Surname", 100);
-            listView1.Columns.Add("TurkishID", 100);
-            listView1.Columns.Add("MAAŞ", 100);
-            listView1.Columns.Add("YAŞ", 100);
-            listView1.Columns.Add("GÜNLÜK HASTA SAYISI", 100);
-            listView1.Columns.Add("UNVAN", 100);
-            listView1.Columns.Add("AYLIK NÖBET SAYISI", 100);
-            listView1.Columns.Add("UZMANLIK ALANI", 100);
-            listView1.Columns.Add("DÖNER SERMAYE PARASI", 100);
+            lstList.View = View.Details;
+            lstList.GridLines = true;
+            lstList.Columns.Add("Name", 100);
+            lstList.Columns.Add("Surname", 100);
+            lstList.Columns.Add("TurkishID", 100);
+            lstList.Columns.Add("MAAŞ", 100);
+            lstList.Columns.Add("YAŞ", 100);
+            lstList.Columns.Add("GÜNLÜK HASTA SAYISI", 100);
+            lstList.Columns.Add("UNVAN", 100);
+            lstList.Columns.Add("AYLIK NÖBET SAYISI", 100);
+            lstList.Columns.Add("UZMANLIK ALANI", 100);
+            lstList.Columns.Add("DÖNER SERMAYE PARASI", 100);
 
             foreach (var item in MainHospitalForm.hospital.Doctors)
             {
@@ -48,7 +48,7 @@ namespace FormHospital
                 lstitem.SubItems.Add(item.MonthlyVigilCount.ToString());
                 lstitem.SubItems.Add(item.ExpertiseField);
                 lstitem.SubItems.Add(item.ExtraMoneyBank.ToString());
-                listView1.Items.Add(lstitem);
+                lstList.Items.Add(lstitem);
             }
         }
     }
